@@ -5,7 +5,7 @@
 ## Prerequisites
 
 * docker & docker-compose configured for current user
-* golang 1.13 and above
+* golang 1.14 or above
 
 ## How to start?
 
