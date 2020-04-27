@@ -8,15 +8,19 @@ import (
 
 	"github.com/powerman/rpc-codec/jsonrpc2"
 	"github.com/taipoxin/json-rpc-pg/internal/api/handlers"
+	"github.com/taipoxin/json-rpc-pg/internal/api/models"
 )
 
 // Start - run JSON-RPC 2.0 server on param:addr
 func Start(addr string) {
 
-	handler := handlers.Test{}
+	dbContainer := models.EstablishConnection()
+	mainHandler := handlers.Main{
+		dbContainer,
+	}
 
 	server := rpc.NewServer()
-	server.Register(&handler)
+	server.Register(&mainHandler)
 
 	listener, err := net.Listen("tcp", addr)
 	if err != nil {

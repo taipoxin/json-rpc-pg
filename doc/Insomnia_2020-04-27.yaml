@@ -1,0 +1,242 @@
+_type: export
+__export_format: 4
+__export_date: 2020-04-27T15:43:59.865Z
+__export_source: insomnia.desktop.app:v7.1.1
+resources:
+  - _id: req_f2ff6c0e0efe4d459ff11278dfb9f0f6
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"jsonrpc": "2.0",
+        	"method": "Main.GetPosts",
+        	"id": "1"
+        }
+    created: 1587996668889
+    description: ""
+    headers:
+      - id: pair_043a5e36f9de491398e00fcaa6bbd557
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1587996668889
+    method: POST
+    modified: 1587996710265
+    name: getPosts
+    parameters: []
+    parentId: fld_d4de3162256d4b73adc27da8f9fe8c0a
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://localhost:8080/rpc
+    _type: request
+  - _id: fld_d4de3162256d4b73adc27da8f9fe8c0a
+    created: 1587981310831
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1587981310831
+    modified: 1587981310831
+    name: json-rpc
+    parentId: wrk_478d0bdd1c294d06b6c3b8946cc1bf89
+    _type: request_group
+  - _id: wrk_478d0bdd1c294d06b6c3b8946cc1bf89
+    created: 1587981195590
+    description: ""
+    modified: 1587981195590
+    name: Insomnia
+    parentId: null
+    _type: workspace
+  - _id: req_6181bc4f510146e3a0841615d8bed164
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"jsonrpc": "2.0",
+        	"method": "Main.GetPost",
+        	"params": [
+        		 2
+        	 ],
+        	"id": "1"
+        }
+    created: 1587999578541
+    description: ""
+    headers:
+      - id: pair_043a5e36f9de491398e00fcaa6bbd557
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1587992829362
+    method: POST
+    modified: 1588001962466
+    name: getPost
+    parameters: []
+    parentId: fld_d4de3162256d4b73adc27da8f9fe8c0a
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://localhost:8080/rpc
+    _type: request
+  - _id: req_287d9e187f6e47a28b4281dc89a3bc4a
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"jsonrpc": "2.0",
+        	"method": "Main.DeletePost",
+        	"params": {
+        		"ID": 5
+        	},
+        	"id": "1"
+        }
+    created: 1588000437134
+    description: ""
+    headers:
+      - id: pair_043a5e36f9de491398e00fcaa6bbd557
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1587990909598.5
+    method: POST
+    modified: 1588000465435
+    name: deletePost
+    parameters: []
+    parentId: fld_d4de3162256d4b73adc27da8f9fe8c0a
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://localhost:8080/rpc
+    _type: request
+  - _id: req_fc6b630585d241dab937602c2716281a
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"jsonrpc": "2.0",
+        	"method": "Main.AddPost",
+        	"params": {
+        		"Title": "hello, friend"
+        	},
+        	"id": "1"
+        }
+    created: 1587998095148
+    description: ""
+    headers:
+      - id: pair_043a5e36f9de491398e00fcaa6bbd557
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1587988989835
+    method: POST
+    modified: 1587998447632
+    name: addPost
+    parameters: []
+    parentId: fld_d4de3162256d4b73adc27da8f9fe8c0a
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://localhost:8080/rpc
+    _type: request
+  - _id: req_8b6ac55a93e94042a278f48913502670
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"jsonrpc": "2.0",
+        	"method": "Main.UpdatePost",
+        	"params": {
+        		"ID": 3,
+        		"Title": "updated"
+        	},
+        	"id": "1"
+        }
+    created: 1588000397597
+    description: ""
+    headers:
+      - id: pair_043a5e36f9de491398e00fcaa6bbd557
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1587985150308
+    method: POST
+    modified: 1588000423767
+    name: updatePost
+    parameters: []
+    parentId: fld_d4de3162256d4b73adc27da8f9fe8c0a
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://localhost:8080/rpc
+    _type: request
+  - _id: req_5b3019ac08ba47ceae4022b1c8134fea
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"jsonrpc": "2.0",
+        	"method": "Main.Hello",
+        	"params": {
+        		"Name": "Mike"
+        	},
+        	"id": "1"
+        }
+    created: 1587981320390
+    description: ""
+    headers:
+      - id: pair_c1ca8e1c22084a67b576459f78253dc1
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1587981310781
+    method: POST
+    modified: 1587996691051
+    name: one
+    parameters: []
+    parentId: fld_d4de3162256d4b73adc27da8f9fe8c0a
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://localhost:8080/rpc
+    _type: request
+  - _id: env_d7f74a381b3f867ee1e4a6a82b94771246bc5d35
+    color: null
+    created: 1587981195645
+    data: {}
+    dataPropertyOrder: null
+    isPrivate: false
+    metaSortKey: 1587981195645
+    modified: 1587981195645
+    name: Base Environment
+    parentId: wrk_478d0bdd1c294d06b6c3b8946cc1bf89
+    _type: environment
+  - _id: jar_d7f74a381b3f867ee1e4a6a82b94771246bc5d35
+    cookies: []
+    created: 1587981195647
+    modified: 1587981195647
+    name: Default Jar
+    parentId: wrk_478d0bdd1c294d06b6c3b8946cc1bf89
+    _type: cookie_jar
